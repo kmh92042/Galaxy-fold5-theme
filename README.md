@@ -1,5 +1,20 @@
 # NOCTURNE · Galaxy Z Fold5 Theme Studio
 
+## 새 컬렉션: 로스트아크 · 니나브 — Wings of Dawn
+
+딥 네이비·샴페인 골드·천공의 성전을 배경으로 니나브를 재해석한 비공식 AI 팬아트 테마를 추가했습니다. 기본 화면은 니나브 테마이며 상단 컬렉션 선택으로 기존 미드나잇 컬렉션에 돌아갈 수 있습니다. 테마별 이미지·어둡기·크롭·컬러 편집값은 서로 독립적으로 유지됩니다.
+
+- **[니나브 테마 ZIP 바로 받기](public/downloads/LOSTARK-Nineveh-Fold5.zip?raw=true)** — 배경 3종, 아이콘 8종, 적용 가이드.
+- [새 디자인 설명과 적용법](design/lostark/README.md)
+- [기존 NOCTURNE ZIP](public/downloads/NOCTURNE-Fold5.zip?raw=true)
+
+![니나브 테마 미리보기](design/lostark/preview.png)
+
+사용자가 선택한 특정 캐릭터 방향에 따라 니나브 팬아트로 제작했습니다. 제공된 삼성 참고 링크는 환경의 접근 정책에서 차단되어 내용을 확인하지 못했습니다. 참고 페이지와 동일한 디자인이나 공식 캐릭터 원화를 사용했다고 주장하지 않습니다. 로스트아크·니나브 관련 권리는 원 권리자에게 있으며, Smilegate 공식 상품이나 삼성 설치형 테마가 아닙니다.
+
+아래 기존 NOCTURNE 컬렉션과 동일한 실행·수동 적용 방법을 사용합니다.
+
+
 블랙·퍼플·네온 블루의 K팝 판타지 테마 제작 도구. 오리지널 여성 캐릭터 ‘미드나잇 어웨이크닝’ 일러스트와 앱 아이콘을 포함합니다. React + TypeScript + Vite로 제작했으며, 모든 UI와 적용 가이드는 한국어입니다.
 
 ![테마 스튜디오 미리보기](design/preview.png)
@@ -87,8 +102,8 @@ npm test
 
 Linux `/usr/bin/chromium`이 있으면 이를 사용합니다. 다른 설치 경로는 `CHROMIUM_PATH=/경로/브라우저 npm test`로 지정할 수 있습니다. 테스트는 로컬 Vite 서버를 자동 시작합니다. 실제 PNG 시그니처·픽셀 규격, ZIP 파일 12개, 화면 전환, 이미지 교체 격리, 크롭·어둡기, 위젯 토글, 적용 안내, 모바일 가로 넘침과 브라우저 런타임 오류를 검증합니다.
 
-기본 디자인 PNG를 다시 생성하려면 한 터미널에서 `npm run dev -- --port 5173`, 다른 터미널에서 `node scripts/export-assets.mjs`를 실행하세요. 이 스크립트는 기본값으로 웹 내보내기를 수행해 `design/exports/`를 덮어씁니다. 디자인 파일을 수정했다면 먼저 보관하세요.
+기본 디자인 PNG를 다시 생성하려면 한 터미널에서 `npm run dev -- --port 5173`, 다른 터미널에서 `node scripts/export-assets.mjs lostark` 또는 `node scripts/export-assets.mjs nocturne`를 실행하세요. 이 스크립트는 선택한 테마의 기본값으로 웹 내보내기를 수행해 각각 `design/lostark/exports/` 또는 `design/exports/`를 덮어씁니다. 미리보기 PNG와 `public/downloads/`의 해당 ZIP도 함께 생성합니다. 디자인 파일을 수정했다면 먼저 보관하세요.
 
 ## 디자인 출처
 
-캐릭터 일러스트는 이 프로젝트용 AI 생성 오리지널 디자인입니다. 특정 영화·애니메이션의 캐릭터, 로고, 스틸을 사용하지 않았습니다. K팝 판타지 장르의 무대 의상과 도시의 야경을 참고한 별도 콘셉트입니다. UI 아이콘은 lucide-react(ISC), 앱 대체 아이콘은 프로젝트의 SVG 정의를 사용합니다. 웹 폰트나 외부 이미지 CDN에 의존하지 않습니다.
+캐릭터 일러스트는 기존 NOCTURNE 원화는 이 프로젝트용 AI 생성 오리지널 디자인입니다. 해당 원화에 특정 영화·애니메이션의 캐릭터, 로고, 스틸을 사용하지 않았습니다. 새 니나브 컬렉션은 별도의 비공식 캐릭터 팬아트이며, 디자인 설명은 `design/lostark/README.md`를 참조하세요. K팝 판타지 장르의 무대 의상과 도시의 야경을 참고한 별도 콘셉트입니다. UI 아이콘은 lucide-react(ISC), 앱 대체 아이콘은 프로젝트의 SVG 정의를 사용합니다. 웹 폰트나 외부 이미지 CDN에 의존하지 않습니다.
