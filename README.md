@@ -1,5 +1,13 @@
 # NOCTURNE · Galaxy Z Fold5 Theme Studio
 
+## 전체 테마로 확장하기 · Theme Park 개인 적용
+
+**[니나브 전체 테마 설계·수동 적용 가이드](design/full-theme/README.md)** · **[휴대폰 수동 적용팩 ZIP](public/downloads/LOSTARK-Nineveh-ThemePark-Manual.zip?raw=true)** · **[제작자료 ZIP](public/downloads/LOSTARK-Nineveh-Fold5-Design-Kit.zip?raw=true)**
+
+사용자 확인된 폴드5 / One UI 8.5의 테마·키보드·퀵패널·아이콘·음량패널을 대상으로 색상 입력표와 7종 디자인 시안을 추가했습니다. 웹 하단의 ‘전체 테마 설계 보기’에서 확인할 수 있습니다. 제작자료는 PNG/SVG 시안·부품·기존 배경/아이콘·색상표이며, 설치형 삼성 테마나 Theme Park 가져오기 파일이 아닙니다. 실제 기기에서 지원 항목에 색상을 입력하고 저장·적용하는 단계는 아직 수행하지 않았습니다.
+
+
+
 ## 새 컬렉션: 로스트아크 · 니나브 — Wings of Dawn
 
 딥 네이비·샴페인 골드·천공의 성전을 배경으로 니나브를 재해석한 비공식 AI 팬아트 테마를 추가했습니다. 기본 화면은 니나브 테마이며 상단 컬렉션 선택으로 기존 미드나잇 컬렉션에 돌아갈 수 있습니다. 테마별 이미지·어둡기·크롭·컬러 편집값은 서로 독립적으로 유지됩니다.

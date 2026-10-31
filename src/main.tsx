@@ -31,6 +31,7 @@ import {
 } from "./theme";
 import { download, iconPng, loadImage, pack, wallpaper } from "./export";
 import "./styles.css";
+import { FullThemeStudio } from "./FullThemeStudio";
 const initialEdits = Object.fromEntries(
   Object.entries(collections).map(([id, c]) => [
     id,
@@ -52,6 +53,7 @@ const initialEdits = Object.fromEntries(
 >;
 
 function App() {
+  const [showFullTheme, setShowFullTheme] = useState(false);
   const [surface, setSurface] = useState<Surface>("cover");
   const [tab, setTab] = useState("wallpaper");
   const [collectionId, setCollectionId] = useState<CollectionId>("lostark");
@@ -380,7 +382,9 @@ function App() {
                     }}
                   />
                   <div className="device-dim" style={{ opacity: dim / 100 }} />
-                  {collection.iconStyle === "relic" && <div className="readability-veil" />}
+                  {collection.iconStyle === "relic" && (
+                    <div className="readability-veil" />
+                  )}
                   {surface === "lock" && <div className="lock-veil" />}
                   <div className="camera-dot" />
                   <div className="phone-status">
@@ -693,6 +697,27 @@ function App() {
               PNG ASSETS <ArrowUpRight size={13} />
             </span>
           </section>
+          <div className="full-theme-entry">
+            <div>
+              <strong>
+                원신 예시처럼 전체 화면의 디자인을 통일하고 싶다면
+              </strong>
+              <p>
+                전화·삼성 메시지·키보드·알림창의 설계와 조립 리소스를
+                확인하세요. 실제 기기 적용은 별도입니다.
+              </p>
+            </div>
+            <button
+              className="primary"
+              aria-expanded={showFullTheme}
+              onClick={() => setShowFullTheme(!showFullTheme)}
+            >
+              {showFullTheme ? "전체 테마 설계 닫기" : "전체 테마 설계 보기"}
+            </button>
+          </div>
+          {showFullTheme && (
+            <FullThemeStudio key={collectionId} collectionId={collectionId} />
+          )}
           <footer>
             <span>
               NOCTURNE <i /> Designed for the way you unfold.

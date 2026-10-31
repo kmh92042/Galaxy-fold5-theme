@@ -1,0 +1,129 @@
+{
+  "targetOneUi": "8.5",
+  "targetSource": "user-reported",
+  "reportedTabs": [
+    "테마",
+    "키보드",
+    "퀵패널",
+    "아이콘",
+    "음량패널"
+  ],
+  "recommendedMappings": {
+    "테마": [
+      [
+        "화면 배경",
+        "background"
+      ],
+      [
+        "카드",
+        "surface"
+      ],
+      [
+        "강조색",
+        "accent"
+      ],
+      [
+        "기본 글자",
+        "text"
+      ],
+      [
+        "보조 글자",
+        "secondary"
+      ]
+    ],
+    "키보드": [
+      [
+        "바탕",
+        "background"
+      ],
+      [
+        "일반 키",
+        "surface"
+      ],
+      [
+        "키 글자",
+        "text"
+      ],
+      [
+        "액션 키",
+        "accent"
+      ],
+      [
+        "액션 키 글자",
+        "onAccent"
+      ]
+    ],
+    "퀵패널": [
+      [
+        "패널 배경",
+        "background"
+      ],
+      [
+        "켜진 버튼",
+        "accent"
+      ],
+      [
+        "켜진 아이콘",
+        "onAccent"
+      ],
+      [
+        "꺼진 버튼·알림 카드",
+        "surface"
+      ],
+      [
+        "꺼진 아이콘",
+        "secondary"
+      ],
+      [
+        "알림 글자",
+        "text"
+      ]
+    ],
+    "아이콘": [
+      [
+        "기존 팩의 개별 PNG 사용",
+        "accent"
+      ]
+    ],
+    "음량패널": [
+      [
+        "패널",
+        "surface"
+      ],
+      [
+        "슬라이더 바탕",
+        "background"
+      ],
+      [
+        "슬라이더 채움",
+        "accent"
+      ],
+      [
+        "아이콘",
+        "text"
+      ]
+    ]
+  },
+  "format": "nocturne-design-kit-v1",
+  "collection": "로스트아크 · 니나브",
+  "installable": false,
+  "themeParkImport": false,
+  "deviceValidated": false,
+  "previewSize": {
+    "width": 904,
+    "height": 2316
+  },
+  "colors": {
+    "background": "#0C1726",
+    "surface": "#192B40",
+    "elevated": "#223A51",
+    "accent": "#DFC38E",
+    "onAccent": "#241A0A",
+    "text": "#F5F3ED",
+    "secondary": "#BBC7D7",
+    "outline": "#617187",
+    "received": "#253A50",
+    "sent": "#DCC18D",
+    "disabled": "#728094"
+  }
+}
